@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+  - node
+cache: npm
+deploy:
+  provider: heroku
+  api_key:
+    secure: CTst+mEAHzpwCx0Kva4yYB4+2aqNR5bKXcwOBsrJ+jS6PqybR4Au7yokk24skbmyG4EhPaaC9p4mBNX9uu6nduIVjRSv55sKe3kJRsjgFc1fPwUE24Z4xZVd0vLkAvA+RfYDq4UnuqgbwGWDV2tRR1fl5VEupoeq0aqCydXhoyDq3fCbHxkJ5QbuBkFNyqLDYxDKmXhMOfgJ6Br/Hppomnltbor4uWQX1WpjFmoWBjWz/mThhmtmIku7TBzowOEUuYgh7euA2GA6Bzej46SY3gm9MSy6n4uBZMn8spIxd21UAPS4zzbCOmPNSON/RMGbdXnR981SDTu1yhW+iN6z9wOYmUXXE7XXaKEUo2nb/4THdNSUOdZ3O0Qlmb6gzR6Ybvcq8Aa3WQBDk+kHL/A9Vfns0drQbUqwr7CcyJxXv0ZwPVndQzkSvdyYRTdY7wWMqPo/3yrqVecmKfKVE/CknaHbeSXPMAHmlM16Ab9cC8fD6clPlrFdTELhDHCCXyDkiyzuwD2jRvnweq4tTuKVqk5eLpVapt9DoBCXkt4JkeCqL5l8glYcJqvWPc9kusXFXfJJ9QO1qWaJxHSGe1LFCZX/s+XETR1Pl2SCjttAIpUcSdRsI+xGDOiJyOVwKO10Jd68GRaMv6tKW8pZSA+oupEUwAcxeN1Ty6gdZvsluHw=
+  app: septa-view-api
+services:
+  - mongodb
